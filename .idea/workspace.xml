@@ -7,13 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9977109e-9400-4dd8-847f-ddada8cda05a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/spring2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring2.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring2.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring2/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring2/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring2/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,7 +233,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
@@ -291,7 +285,7 @@
       <workItem from="1589013197910" duration="3707000" />
       <workItem from="1589080524537" duration="2147000" />
       <workItem from="1589257124218" duration="26000000" />
-      <workItem from="1589423755155" duration="20372000" />
+      <workItem from="1589423755155" duration="21222000" />
     </task>
     <servers />
   </component>
@@ -351,22 +345,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="109" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1589423810291" />
-    <state width="905" height="286" key="GridCell.Tab.0.bottom" timestamp="1589454184978">
+    <state width="905" height="286" key="GridCell.Tab.0.bottom" timestamp="1589458521225">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="286" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589454184978" />
-    <state width="905" height="286" key="GridCell.Tab.0.center" timestamp="1589454184976">
+    <state width="905" height="286" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589458521225" />
+    <state width="905" height="286" key="GridCell.Tab.0.center" timestamp="1589458521224">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="286" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1589454184976" />
-    <state width="905" height="286" key="GridCell.Tab.0.left" timestamp="1589454184975">
+    <state width="905" height="286" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1589458521224" />
+    <state width="905" height="286" key="GridCell.Tab.0.left" timestamp="1589458521224">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="286" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1589454184975" />
-    <state width="905" height="286" key="GridCell.Tab.0.right" timestamp="1589454184976">
+    <state width="905" height="286" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1589458521224" />
+    <state width="905" height="286" key="GridCell.Tab.0.right" timestamp="1589458521224">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="286" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1589454184976" />
+    <state width="905" height="286" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1589458521224" />
     <state width="905" height="276" key="GridCell.Tab.1.bottom" timestamp="1589451958287">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
