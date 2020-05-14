@@ -104,19 +104,19 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Database" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\veeru\IdeaProjects\spring2" />
+      <recent name="C:\Users\veeru\IdeaProjects\spring2\src\main\webapp\resources\json" />
+      <recent name="C:\Users\veeru\IdeaProjects\spring2\src\main\java\com\veeru\Model" />
+      <recent name="C:\Users\veeru\IdeaProjects\spring2\src\main\resources\keys" />
+      <recent name="C:\Users\veeru\IdeaProjects\spring2\src\main\resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\veeru\IdeaProjects\spring2\src\main\webapp\resources\json" />
       <recent name="C:\Users\veeru\IdeaProjects\spring2\src\main\resources\keys" />
       <recent name="C:\Users\veeru\IdeaProjects\spring2\src\main\webapp\resources" />
       <recent name="C:\Users\veeru\IdeaProjects\spring2\src\main" />
       <recent name="C:\Users\veeru\IdeaProjects\spring2\src\main\resources\config" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\veeru\IdeaProjects\spring2\src\main\webapp\resources\json" />
-      <recent name="C:\Users\veeru\IdeaProjects\spring2\src\main\java\com\veeru\Model" />
-      <recent name="C:\Users\veeru\IdeaProjects\spring2\src\main\resources\keys" />
-      <recent name="C:\Users\veeru\IdeaProjects\spring2\src\main\resources" />
-      <recent name="C:\Users\veeru\IdeaProjects\spring2\src\main\webapp\WEB-INF\css" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -282,7 +282,7 @@
       <workItem from="1589013197910" duration="3707000" />
       <workItem from="1589080524537" duration="2147000" />
       <workItem from="1589257124218" duration="26000000" />
-      <workItem from="1589423755155" duration="18150000" />
+      <workItem from="1589423755155" duration="18368000" />
     </task>
     <servers />
   </component>
@@ -330,6 +330,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1588500848367" />
+    <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1589455243858">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="321" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1589455243858" />
     <state x="481" y="70" key="ExecutionTargetDialog" timestamp="1586454818287">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
