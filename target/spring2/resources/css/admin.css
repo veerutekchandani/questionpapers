@@ -1,0 +1,30 @@
+body {
+    background-color : #cccccc !important;
+    overflow: hidden;
+    height: 100vh;
+}
+
+#login-card {
+    margin-top: 20vh;
+    margin-left: 30%;
+    width: 40%;
+    position: absolute;
+    height : 60vh ;
+    background-color: white;
+    overflow: hidden;
+}
+
+#card-heading {
+    background-color: #404040;
+    color: white;
+    font-size: 25px;
+}
+
+input {
+    width: 40%;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+
+}

@@ -1,0 +1,39 @@
+body {
+    background-color : #cccccc !important;
+    overflow: hidden;
+    height: 100%;
+}
+
+#card-center {
+    margin-top : 5%;
+    margin-left: 25%;
+    width: 50%;
+    height : 80%;
+    background-color: white;
+}
+
+#card-heading {
+    background-color: #66b3ff;
+    color: white;
+    font-size: 25px;
+}
+
+
+.select {
+    width : 50%;
+    height: 40px;
+    border-radius: 5px;
+    border-color: black;
+}
+
+.select:hover {
+    cursor: pointer;
+}
+
+.admin {
+    float: right;
+}
+
+#footer {
+    background-color: white;
+}

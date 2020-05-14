@@ -1,0 +1,100 @@
+{
+  "FIRST": [
+    {
+      "subject": "PROGRAMMING AND PROBLEM SOLVING",
+      "code": "PAPS"
+    },
+    {
+      "subject": "FOUNDATION OF LOGIC",
+      "code": "FOL"
+    },
+    {
+      "subject": "DIGITAL COMPUTER ORGANIZATION",
+      "code": "DCO"
+    },
+    {
+      "subject": "IT MANAGEMENT",
+      "code": "ITM"
+    }
+  ],
+  "SECOND": [
+    {
+      "subject": "DATA STRUCTURES",
+      "code": "DS"
+    },
+    {
+      "subject": "OBJECT ORIENTED PROGRAMMING",
+      "code": "OOPS"
+    },
+    {
+      "subject": "XML APPLICATIONS",
+      "code": "XML"
+    },
+    {
+      "subject": "AUTOMATA THEORY",
+      "code": "AT"
+    },
+    {
+      "subject": "TECHNICAL WRITING",
+      "code": "TW"
+    }
+  ],
+  "THIRD": [
+    {
+      "subject": "OPERATING SYSTEM",
+      "code": "OS"
+    },
+    {
+      "subject": "DATABASE MANAGEMENT SYSTEM",
+      "code": "DBMS"
+    },
+    {
+      "subject": "SOFT COMPUTING",
+      "code": "SC"
+    },
+    {
+      "subject": "ANALYSIS OF ALGORITHMS",
+      "code": "AOA"
+    },
+    {
+      "subject": "OBJECT BASED MODELLING",
+      "code": "OBM"
+    }
+  ],
+  "FOURTH": [
+    {
+      "subject": "COMPUTER GRAPHICS",
+      "code": "CG"
+    },
+    {
+      "subject": "SOFTWARE ENGINEERING",
+      "code": "SE"
+    },
+    {
+      "subject": "COMPUTER NETWORKS",
+      "code": "CN"
+    },
+    {
+      "subject": "DATA MINING",
+      "code": "DM"
+    },
+    {
+      "subject" : "CRYPTOGRAPHY AND NETWORK SECURITY",
+      "code" : "CANS"
+    }
+  ],
+  "FIFTH": [
+    {
+      "subject": "MULTIMEDIA TECHNOLOGY",
+      "code": "MT"
+    },
+    {
+      "subject": "E-COMMERCE",
+      "code": "EC"
+    },
+    {
+      "subject": "PROFESSIONAL ETHICS",
+      "code": "PE"
+    }
+  ]
+}

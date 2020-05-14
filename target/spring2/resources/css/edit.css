@@ -1,0 +1,83 @@
+body {
+    height: 100vh;
+    overflow: hidden;
+    background-color: #cccccc !important;
+}
+
+#heading {
+    background-color: #333333;
+}
+
+#navigation {
+    height : 40px;
+    background-color: white !important;
+}
+
+a {
+    color : black !important;
+}
+
+#edit-card {
+    margin-top : 10vh;
+    margin-left: 25%;
+    width : 50%;
+    height: 80vh;
+}
+
+
+button {
+    width : 100px;
+}
+
+.active {
+    background-color: #cccccc;
+}
+
+li {
+    width: 100px;
+    text-align: center;
+}
+
+input[type=text] {
+    width : 80%;
+    height : 40px;
+    border-radius: 5px;
+    border : 1px solid;
+}
+
+.select-upload {
+    width : 80%;
+    height: 40px;
+    border-radius: 5px;
+    border-color: black;
+}
+
+
+
+.select-upload:hover {
+    border : 2px solid blue;
+    cursor: pointer;
+}
+
+input[type="file"] {
+    width: 40%;
+    border : 1px solid black;
+    border-radius: 5px;
+}
+
+input[type="file"]:hover {
+    background-color: #ccddff;
+    cursor: pointer;
+}
+
+.select-change {
+    width : 40%;
+    height: 40px;
+    border-radius: 5px;
+    border-color: black;
+}
+
+.select-change:hover {
+    border : 2px solid blue;
+    cursor: pointer;
+}

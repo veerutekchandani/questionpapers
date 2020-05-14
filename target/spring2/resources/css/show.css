@@ -1,0 +1,28 @@
+body {
+    background-color : #cccccc !important;
+    overflow: hidden;
+    height: 100%;
+}
+
+#card-center {
+    margin-top : 5%;
+    margin-left: 25%;
+    width: 50%;
+    height: 90% !important;
+    background-color: white;
+}
+
+#card-heading {
+    color: white;
+    font-size: 25px;
+}
+
+.scrollable {
+    padding:0;
+    overflow: hidden;
+    overflow-y:scroll;
+    height: 400px;
+}
+
+
+
