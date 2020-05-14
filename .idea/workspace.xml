@@ -63,6 +63,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -83,6 +86,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1aCiY0mLze835YEFRlOW9YDVSJt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -93,7 +97,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../helloworld" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.30689654" />
@@ -278,7 +282,7 @@
       <workItem from="1589013197910" duration="3707000" />
       <workItem from="1589080524537" duration="2147000" />
       <workItem from="1589257124218" duration="26000000" />
-      <workItem from="1589423755155" duration="17570000" />
+      <workItem from="1589423755155" duration="18150000" />
     </task>
     <servers />
   </component>
