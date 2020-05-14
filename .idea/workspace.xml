@@ -6,9 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9977109e-9400-4dd8-847f-ddada8cda05a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9977109e-9400-4dd8-847f-ddada8cda05a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -286,6 +284,7 @@
       <workItem from="1589080524537" duration="2147000" />
       <workItem from="1589257124218" duration="26000000" />
       <workItem from="1589423755155" duration="21222000" />
+      <workItem from="1589474174505" duration="374000" />
     </task>
     <servers />
   </component>

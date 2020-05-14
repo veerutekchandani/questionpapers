@@ -30,7 +30,7 @@ function populateEditChangeSubjects() {
         else {
             $.ajax({
                 type: "POST",
-                url: "/spring2_war_exploded/populateSubjects?semester=" + value,
+                url: "/populateSubjects?semester=" + value,
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
                 success: function (res) {
@@ -43,7 +43,6 @@ function populateEditChangeSubjects() {
                 error: function (res) {
                     console.log(res);
                 }
-
             });
         }
 }
