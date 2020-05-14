@@ -1,6 +1,5 @@
 package com.veeru.Controller;
 
-import com.mysql.cj.protocol.Resultset;
 import com.veeru.Model.DownloadFile;
 import com.veeru.Model.QuestionPaper;
 import com.veeru.Model.UploadPaper;
@@ -20,9 +19,6 @@ import com.google.api.services.drive.Drive;
 import com.google.api.services.drive.DriveScopes;
 import com.google.api.services.drive.model.FileList;
 import com.veeru.Service.DBConnection;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.io.Resource;
@@ -38,7 +34,6 @@ import javax.annotation.PostConstruct;
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.swing.plaf.nimbus.State;
 import java.io.*;
 import java.net.URLDecoder;
 import java.sql.Connection;
