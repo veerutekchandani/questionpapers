@@ -1,8 +1,6 @@
 package com.veeru.Controller;
 
-import com.veeru.Model.DownloadFile;
-import com.veeru.Model.QuestionPaper;
-import com.veeru.Model.UploadPaper;
+import com.veeru.Model.*;
 
 import com.google.api.client.auth.oauth2.Credential;
 import com.google.api.client.googleapis.auth.oauth2.GoogleAuthorizationCodeFlow;
@@ -89,6 +87,9 @@ public class DriveController {
                 saveToken(code);
                 // on successful signup , it will be redirected to edit page
                 model.addAttribute("uploadPaper",new UploadPaper());
+                model.addAttribute("changeSemester",new ChangeSemester());
+                model.addAttribute("addSubject",new AddSubject());
+                model.addAttribute("deleteSubject",new DeleteSubject());
                 return "edit";
             }
             catch(Exception e) {
@@ -110,7 +111,7 @@ public class DriveController {
 
 
     // FUNCTION TO UPLOAD FILE TO GOOGLE DRIVE FOLDER
-    @RequestMapping(value = {"/upload"} , method = RequestMethod.POST)
+    @RequestMapping(value = {"/uploadPaper"} , method = RequestMethod.POST)
     public String uploadFile(@Validated UploadPaper uploadPaper, HttpServletResponse response, Model model) {
 
         MultipartFile multipartFile = uploadPaper.getFile();

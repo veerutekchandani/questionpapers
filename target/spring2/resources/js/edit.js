@@ -1,43 +1,40 @@
 function toggle(id) {
-    var upload = document.getElementById("editUpload");
-    var change = document.getElementById("editChange");
-    var uploaddiv = document.getElementById("upload-body");
-    var changediv = document.getElementById("change-body");
-    if(id == "editUpload") {
-        uploaddiv.removeAttribute("hidden");
-        changediv.setAttribute("hidden","hidden");
-        upload.classList.add("active");
-        change.classList.remove("active");
-    }
-    else {
-        uploaddiv.setAttribute("hidden","hidden");
-        changediv.removeAttribute("hidden");
-        upload.classList.remove("active");
-        change.classList.add("active");
+    for(var i=1;i<=4;i++) {
+        var ID = "tab"+i;
+        var element = document.getElementById(ID);
+        var element_body = document.getElementById(ID+"-body");
+        if(ID == id) {
+            element_body.removeAttribute("hidden");
+            element.classList.add("active");
+        }
+        else {
+            element_body.setAttribute("hidden","hidden");
+            element.classList.remove("active");
+        }
     }
 }
 
 
 
 function populateEditChangeSubjects() {
-        var e = document.getElementById("oldsemester");
+        var e = document.getElementById("oldSemester");
         var value = e.options[e.selectedIndex].value;
 
         if(value<1 || value>5) {
-            $('#cSubject').find('option').remove();
-            $("#cSubject").append('<option value="" hidden="hidden">Choose Subject</option>');
+            $('#changeSubject').find('option').remove();
+            $("#changeSubject").append('<option value="" hidden="hidden">Choose Subject</option>');
         }
         else {
             $.ajax({
                 type: "POST",
-                url: "/populateSubjects?semester=" + value,
+                url: "populateSubjects?semester=" + value,
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
                 success: function (res) {
-                    $('#cSubject').find('option').remove();
-                    $("#cSubject").append('<option value="" hidden="hidden">Choose Subject</option>');
+                    $('#changeSubject').find('option').remove();
+                    $("#changeSubject").append('<option value="" hidden="hidden">Choose Subject</option>');
                     for (var i = 0; i < res.length; i++) {
-                        $("#cSubject").append('<option value=' + res[i].subjectCode + '>' + res[i].subjectName + '</option>');
+                        $("#changeSubject").append('<option value=' + res[i].subjectCode + '>' + res[i].subjectName + '</option>');
                     }
                 },
                 error: function (res) {
@@ -45,4 +42,32 @@ function populateEditChangeSubjects() {
                 }
             });
         }
+}
+
+function populateEditDeleteSubjects() {
+    var e = document.getElementById("deleteSemester");
+    var value = e.options[e.selectedIndex].value;
+
+    if(value<1 || value>5) {
+        $('#deleteSubject').find('option').remove();
+        $("#deleteSubject").append('<option value="" hidden="hidden">Choose Subject</option>');
+    }
+    else {
+        $.ajax({
+            type: "POST",
+            url: "populateSubjects?semester=" + value,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (res) {
+                $('#deleteSubject').find('option').remove();
+                $("#deleteSubject").append('<option value="" hidden="hidden">Choose Subject</option>');
+                for (var i = 0; i < res.length; i++) {
+                    $("#deleteSubject").append('<option value=' + res[i].subjectCode + '>' + res[i].subjectName + '</option>');
+                }
+            },
+            error: function (res) {
+                console.log(res);
+            }
+        });
+    }
 }

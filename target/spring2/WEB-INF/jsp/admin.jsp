@@ -12,7 +12,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
-<body>
+
+<body style="background: url('<c:url value="/resources/images/admin.jpg" />')">
 <div class="card shadow p-3 mb-5 rounded" id="login-card">
     <div class="card-header text-center" id="card-heading">
         ADMIN LOGIN

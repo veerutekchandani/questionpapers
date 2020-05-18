@@ -16,13 +16,15 @@
     <script src="<c:url value='/resources/js/edit.js'/>"></script>
 </head>
 
-<body onload="populateSubjects()">
+<body onload="populateSubjects()" style="background: url('<c:url value="/resources/images/admin.jpg" />')">
 <div class="card" id="edit-card">
     <div class="card-header" id="heading">
         <nav class="navbar navbar-expand-sm bg-light" id="navigation">
             <ul class="navbar-nav">
-                <li onclick="toggle(this.id)" class="nav-item active" id="editUpload"><a class="nav-link" href="#">UPLOAD</a></li>
-                <li onclick="toggle(this.id)" class="nav-item" id="editChange"><a class="nav-link" href="#">CHANGE</a></li>
+                <li onclick="toggle(this.id)" class="nav-item active" id="tab1"><a class="nav-link" href="#">UPLOAD</a></li>
+                <li onclick="toggle(this.id)" class="nav-item" id="tab2"><a class="nav-link" href="#">CHANGE</a></li>
+                <li onclick="toggle(this.id)" class="nav-item" id="tab3"><a class="nav-link" href="#">ADD</a></li>
+                <li onclick="toggle(this.id)" class="nav-item" id="tab4"><a class="nav-link" href="#">DELETE</a></li>
                 <!-- <li class="nav-item"><a class="nav-link" href="#">ADD</a></li> -->
             </ul>
         </nav>
@@ -31,8 +33,8 @@
 
 
     <!-- FOR UPDATE -->
-    <div class="card-body" id="upload-body">
-        <form:form name="upload" id="upload" action="upload" modelAttribute="uploadPaper" enctype="multipart/form-data">
+    <div class="card-body" id="tab1-body">
+        <form:form name="upload" id="upload" action="uploadPaper" modelAttribute="uploadPaper" enctype="multipart/form-data">
             <div class="row text-center">
                 <div class="col-md-6">
                     <form:select path="semester" id="semester" name="semester" cssClass="select-upload"
@@ -73,13 +75,13 @@
             <div class="row text-center">
                 <div class="col-md-12">
                     <br><br>
-                    <button class="btn btn-primary" type="submit" name="submit">Upload</button>
+                    <button form="upload" class="btn btn-primary" type="submit" name="submit">Upload</button>
                 </div>
             </div>
             <br>
             <c:if test="${not empty success}">
                 <span style="color:green;font-weight: bold;text-align: center;">${success}</span>
-            </c:if><br><br>
+            </c:if><br>
             <c:if test="${not empty error}">
                 <span style="color:red;font-weight: bold;text-align: center;">${error}</span>
             </c:if><br><br>
@@ -88,43 +90,94 @@
 
 
     <!-- FOR CHANGE -->
-    <div class="card-body" id="change-body" hidden>
-        <form name="change" id="change" onsubmit="changeSemester();return false;">
+    <div class="card-body" id="tab2-body" hidden>
+        <form:form name="change" id="change" action="changeSemester" modelAttribute="changeSemester">
             <div class="row text-center">
                 <div class="col-md-12">
-                    <select class="select-change" name="oldsemester" id="oldsemester" required="required" onchange="populateEditChangeSubjects()">
+                    <form:select class="select-change" name="oldSemester" id="oldSemester" path="oldSemester" required="required" onchange="populateEditChangeSubjects()">
                         <option value="" hidden="hidden">Choose Current Semester</option>
                         <option value="1">FIRST</option>
                         <option value="2">SECOND</option>
                         <option value="3">THIRD</option>
                         <option value="4">FOURTH</option>
                         <option value="5">FIFTH</option>
-                    </select>
+                    </form:select>
                     <br><br>
-                    <select class="select-change" name="cSubject" id="cSubject" required="required">
+                    <form:select class="select-change" path="changeSubject" name="changeSubject" id="changeSubject" required="required">
                         <option value="" hidden="hidden">Choose Subject</option>
-                    </select>
+                    </form:select>
                     <br><br>
-                    <select class="select-change" name="newsemester" id="newsemester" required="required">
+                    <form:select class="select-change" path="newSemester" name="newSemester" id="newSemester" required="required">
                         <option value="" hidden="hidden">Choose New Semester</option>
                         <option value="1">FIRST</option>
                         <option value="2">SECOND</option>
                         <option value="3">THIRD</option>
                         <option value="4">FOURTH</option>
                         <option value="5">FIFTH</option>
-                    </select>
+                    </form:select>
                     <br><br>
-                    <input class="btn btn-primary" type="submit" name="submit">
+                    <input form="change" class="btn btn-primary" type="submit" name="submit">
                 </div>
             </div>
-        </form>
+        </form:form>
         <br>
         <br>
         <div id="message"></div>
     </div>
 
-    <div class="card-body" id="add-body" hidden>
-        add
+    <!-- FOR ADD -->
+    <div class="card-body" id="tab3-body" hidden>
+        <form:form name="add" id="add" action="addSubject" modelAttribute="addSubject">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <form:select cssClass="select-change" path="addSemester" name="addSemester" id="addSemester">
+                        <option value="" hidden="hidden">Choose Semester</option>
+                        <option value="1">FIRST</option>
+                        <option value="2">SECOND</option>
+                        <option value="3">THIRD</option>
+                        <option value="4">FOURTH</option>
+                        <option value="5">FIFTH</option>
+                    </form:select>
+                    <br><br>
+                    <form:input cssStyle="width: 40%;" path="addSubjectCode" name="addSubjectCode" id="addSubjectCode"
+                            placeholder=" Enter subject code : "></form:input>
+                    <br><br>
+                    <form:input cssStyle="width: 40%;" path="addSubjectName" name="addSubjectName" id="addSubjectName"
+                            placeholder=" Enter subject name : "></form:input>
+                    <br><br>
+                    <input form="add" class="btn btn-primary" type="submit" name="submit">
+                </div>
+            </div>
+        </form:form>
+    </div>
+
+    <div class="card-body" id="tab4-body" hidden>
+        <form:form name="delete" id="delete" action="deleteSubject" modelAttribute="deleteSubject">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <form:select cssClass="select-change" path="deleteSemester" name="deleteSemester" id="deleteSemester"
+                            onchange="populateEditDeleteSubjects()">
+                        <option value="" hidden="hidden">Choose Semester</option>
+                        <option value="1">FIRST</option>
+                        <option value="2">SECOND</option>
+                        <option value="3">THIRD</option>
+                        <option value="4">FOURTH</option>
+                        <option value="5">FIFTH</option>
+                    </form:select>
+                    <br><br>
+                    <form:select class="select-change" path="deleteSubject" name="deleteSubject" id="deleteSubject"
+                                 required="required">
+                        <option value="" hidden="hidden">Choose Subject</option>
+                    </form:select>
+                    <br><br>
+                    <input form="delete" class="btn btn-primary" type="submit" name="submit">
+                </div>
+            </div>
+        </form:form>
+    </div>
+
+    <div class="card-footer">
+
     </div>
 
 </div>

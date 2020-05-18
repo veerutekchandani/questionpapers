@@ -38,6 +38,13 @@ li {
     text-align: center;
 }
 
+.add-input{
+    width : 40%;
+    height : 40px;
+    border-radius: 5px;
+    border-color: black;
+}
+
 input[type=text] {
     width : 80%;
     height : 40px;

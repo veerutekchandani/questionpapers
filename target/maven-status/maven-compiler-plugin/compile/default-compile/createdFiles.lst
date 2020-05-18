@@ -1,10 +1,13 @@
+com\veeru\Model\DeleteSubject.class
 com\veeru\Model\DownloadFile.class
 com\veeru\Model\Subject.class
 com\veeru\Model\Admin.class
+com\veeru\Model\AddSubject.class
 com\veeru\Service\DBConnection.class
 com\veeru\Model\QuestionPaper.class
 com\veeru\Model\UploadPaper.class
 com\veeru\Controller\AdminController.class
 com\veeru\Controller\EditController.class
+com\veeru\Model\ChangeSemester.class
 com\veeru\Controller\DriveController.class
 com\veeru\Controller\HomeController.class

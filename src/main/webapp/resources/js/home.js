@@ -9,7 +9,7 @@ function populateSubjects() {
     else {
         $.ajax({
             type: "POST",
-            url: "/populateSubjects?semester=" + value,
+            url: "populateSubjects?semester=" + value,
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             success: function (res) {

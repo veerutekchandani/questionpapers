@@ -14,7 +14,7 @@
     <script src="<c:url value='/resources/js/home.js'/>"></script>
 </head>
 
-<body onload="populateSubjects()">
+<body onload="populateSubjects()" style="background: url('<c:url value="/resources/images/img2.jpg" />')">
 <div class="card shadow p-3 mb-5 rounded" id="card-center">
     <div class="card-header text-center" id="card-heading">
         PREVIOUS QUESTION PAPERS
