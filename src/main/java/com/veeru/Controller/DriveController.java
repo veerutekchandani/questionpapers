@@ -150,9 +150,11 @@ public class DriveController {
         }
         catch (Exception e) {
             model.addAttribute("error","File not Uploaded.");
-            return "edit";
         }
 
+        model.addAttribute("changeSemester",new ChangeSemester());
+        model.addAttribute("addSubject",new AddSubject());
+        model.addAttribute("deleteSubject",new DeleteSubject());
         return "edit";
     }
 
