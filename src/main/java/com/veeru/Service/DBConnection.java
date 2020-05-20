@@ -5,9 +5,9 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DBConnection {
-    private static String url = "jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12340284";
-    private static String username = "sql12340284";
-    private static String password = "hi16vyYkAR";
+    private static String url = "jdbc:mysql://br7rsuu9e0pe6dmhqn4g-mysql.services.clever-cloud.com:3306/br7rsuu9e0pe6dmhqn4g";
+    private static String username = "ufcinxmeulgablza";
+    private static String password = "gUvbeQTZnWvCp2L9hUhO";
     private static Connection con = null;
     public static Connection getConnection() throws SQLException {
         if(con != null && !con.isClosed())
