@@ -1,7 +1,9 @@
 # Spring Application 
 
-Spring application for previous year question papers.
+Web application for previous year question papers.
 
-Used spring mvc , MAVEN , google drive api , sql , javascript , jsp.
+Technologies Used : Spring MVC, JAVA, JSP, SQL, JAVASCRIPT\
+Api Used          : GOOGLE DRIVE API
 
-deployed on https://questionpapers.herokuapp.com/
+## Deployed on
+### https://questionpapers.herokuapp.com/
